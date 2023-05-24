@@ -1,0 +1,73 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> CSV Import</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <a class="header"> CSV Upload </a>
+  </nav>
+  <div class="container">
+    <div class="header-body space" style="margin-top:100px;">
+        <div class="import-file">
+        <div class="file-header">
+          <h5>Import Your CSV file</h5>
+        </div>
+        <div class="file-body">
+          <form action="/" method="post" enctype="multipart/form-data">
+            <input type="file" name="csv"><br><br>
+            <div class="text-center"><button type="submit"  >Upload file</button></div>
+          </form>
+        </div>
+        </div>
+      </div>
+    </div><br>
+    <%if(data){%>
+      <div>
+        <div align="center">
+          <table style="width: 70px" border="1" cellpadding="5">
+           
+            <tr class="bg-primary">
+              <th>S.no</th>
+              <th style="padding-right: 1em">FirstName</th>
+              <th style="padding-right: 1em">LastName</th>
+              <th style="padding-right:2em;padding-left:2em;">Age</th>
+              <th style="padding-right: 1em">Mobile No.</th>
+              <th style="padding-right: 1em">City</th>
+            </tr>
+         
+            <%for(var i=0;i<data.length;i++){%>
+              <tr class="text-center">
+                <td>
+                  <%= i+1%>
+                </td>
+                <td style="padding-right: 1em">
+                  <%= data[i].FirstName%>
+                </td>
+                <td style="padding-left: 1em;">
+                  <%= data[i].LastName%>
+                </td>
+                <td style="padding-right:1em;padding-left:1em;">
+                  <%= data[i].age%>
+                </td>
+                <td style="padding-left: 1em;">
+                  <%= data[i].MobileNo%>
+                </td>
+                <td style="padding-left: 1em;">
+                  <%= data[i].City%>
+                </td>
+
+              </tr>
+              <%}%>
+          </table>
+        </div>
+      </div>
+      <%}%>
+        <br>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+{
+  "name": "csvuploadnode",
+  "version": "1.0.0",
+  "description": "csv upload",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "Prashant Singh",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "csvtojson": "^2.0.10",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "mongoose": "^6.3.4",
+    "multer": "^1.4.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "CSV Upload"
+  }
+}

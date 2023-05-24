@@ -1,0 +1,73 @@
+body{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: aquamarine;
+    color: #aa1e1e;
+    text-transform: uppercase;
+}
+
+a{
+       color: #1d1c1c;
+       display: flex;
+       justify-content: center;
+       font-family: emoji;
+       font-size: xx-large;
+}
+
+.import-file
+{
+    box-shadow: rgb(54 54 172 / 68%) 10px 20px 7px -5px, rgb(215 24 24 / 53%) 0px 8px 0px -8px;
+    padding: 1rem;
+    background-color:#3dc85d;;
+    font-family: math;
+    margin-left: 24%;
+    margin-right: 24%;
+    text-align: center;
+    color: yellow;
+    margin-top: -5%;
+    border-radius: 4px;
+}
+
+table{
+    text-decoration: none;
+    color: rgb(192, 10, 164);
+    border: yellow;
+}
+
+
+th{
+    background-color:  #C2185B;
+    font-size: medium;
+    color: black;
+    font-family: initial;
+}
+
+tr{
+    background-color: #f087aa;
+    font-size: medium;
+    color: #05000f;
+    font-family: initial;
+}
+
+.file-body{
+    display: center;
+    text-transform: uppercase;
+}
+button{
+    margin-top: -7%;
+    margin-right: -60%;
+    height: 2rem;
+    width: 7rem;
+    border-radius: 4px;
+    box-shadow: black;
+    background: #c72222;
+    color: white;
+    border: 1.4px solid #eae3d6;
+    text-transform: uppercase;
+    font-family: 'Roboto';
+}
+
+h5{
+    color: yellow;
+    font-size: larger;
+}
